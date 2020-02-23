@@ -3,12 +3,12 @@ import logoHorizontal from "../../svgs/logo-horizontal.svg";
 import userIcon from "../../svgs/user-icon.svg";
 import styles from "./top-bar.module.css";
 
-const TopBar = () => (
+const TopBar = ({ user }) => (
   <div className={styles["top-bar"]}>
     <img src={logoHorizontal} alt="logo" />
     <div className={styles.user}>
       <img src={userIcon} alt="user" className={styles["user-icon"]} />
-      <span className={styles["user-name"]}>Jane Smith</span>
+      <span className={styles["user-name"]}>{user}</span>
     </div>
   </div>
 );

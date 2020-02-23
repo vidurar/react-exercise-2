@@ -1,19 +1,20 @@
 import React from "react";
-import logoHorizontal from "./svgs/logo-horizontal.svg";
-import userIcon from "./svgs/user-icon.svg";
-import data from "./data/restaurants.json";
+import { useStore } from "react-redux";
+
 import TopBar from "./components/top-bar";
 import LocationBar from "./components/location-bar";
 import RestaurantList from "./components/restaurant-list";
 
 function App() {
+  const { user, neighborhood, restaurants } = useStore().getState();
+
   return (
     <div>
-      <TopBar />
-      <LocationBar neighborhood={data.neighborhood} />
+      <TopBar user={user} />
+      <LocationBar neighborhood={neighborhood} />
       <RestaurantList
-        totalRestaurants={data.restaurants.length}
-        restaurants={data.restaurants.slice(0, 9)}
+        totalRestaurants={restaurants.length}
+        restaurants={restaurants.slice(0, 9)}
       />
     </div>
   );
