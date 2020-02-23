@@ -1,0 +1,26 @@
+.restaurant-number {
+  font-family: "IBM Plex Sans";
+  margin: 3vh 10vh;
+  opacity: 0.5;
+}
+
+.restaurant-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 10vh;
+  flex-shrink: 1;
+}
+
+.restaurant {
+  width: 360px;
+  margin-bottom: 5vh;
+}
+
+.retaurant-details {
+  font-family: "IBM Plex Sans";
+  font-weight: 500;
+  margin-top: 2px;
+  font-size: 14px;
+  opacity: 0.5;
+}

@@ -1,0 +1,27 @@
+.top-bar {
+  margin: 0 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  font-family: "IBM Plex Sans";
+  height: 7vh;
+  flex-shrink: 1;
+}
+
+.user {
+  width: 100px;
+  display: flex;
+  flex-shrink: 1;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 1026px) {
+  .user-name {
+    display: none;
+  }
+  .user {
+    justify-content: flex-end;
+  }
+}
