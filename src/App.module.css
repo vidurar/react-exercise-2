@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
-}
-/* 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.top-bar {
+  margin: 0 10vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  flex-direction: row;
+  font-family: "IBM Plex Sans";
+  height: 7vh;
+  flex-shrink: 1;
+}
+
+.user {
+  width: 100px;
+  display: flex;
+  flex-shrink: 1;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.location-container {
+  display: flex;
+  flex-shrink: 1;
+  background: #00ccbc;
+  height: 20vh;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.location-label {
+  font-family: "IBM Plex Sans";
+  font-weight: 700;
+  color: #004741;
+  margin-left: 10vh;
+}
+
+.location {
   color: white;
+  font-size: 32px;
+  margin-left: 10vh;
 }
 
-.App-link {
-  color: #61dafb;
+.change-location-button {
+  margin-right: 10vh;
+  font-family: "IBM Plex Sans";
+  background: white;
+  color: #00ccbc;
+  display: block;
+  box-sizing: border-box;
+  height: 48px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.restaurant-number {
+  font-family: "IBM Plex Sans";
+  margin: 3vh 10vh;
+  opacity: 0.5;
+}
+
+.restaurant-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 10vh;
+  flex-shrink: 1;
+}
+
+.restaurant {
+  width: 360px;
+  margin-bottom: 5vh;
+}
+
+.retaurant-details {
+  font-family: "IBM Plex Sans";
+  font-weight: 500;
+  margin-top: 2px;
+  font-size: 14px;
+  opacity: 0.5;
+}
+
+@media only screen and (max-width: 1026px) {
+  .user-name {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+  .user {
+    justify-content: flex-end;
   }
-} */
+}
