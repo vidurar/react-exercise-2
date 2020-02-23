@@ -1,6 +1,5 @@
 import React from "react";
 import { useStore } from "react-redux";
-
 import TopBar from "./components/top-bar";
 import LocationBar from "./components/location-bar";
 import RestaurantList from "./components/restaurant-list";
