@@ -1,24 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logoHorizontal from "./svgs/logo-horizontal.svg";
+import userIcon from "./svgs/user-icon.svg";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div>
+        <img src={logoHorizontal} alt="logo" />
+        <img src={userIcon} alt="user" />
+        Jane Smith
+      </div>
+      <div>
+        Location <button>Change location</button>
+      </div>
+      <div>
+        301 restaurants <div>restaurants</div>
+      </div>
     </div>
   );
 }
